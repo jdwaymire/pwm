@@ -9,7 +9,7 @@ docker run --name pwm \
            -p 8443:8443 \
            -v /etc/localtime:/etc/localtime \
            -v ./config:/config \
-           -d lucasdiedrich/pwm
+           -d jdwaymire/pwm
 ```
 
 ## Special Volumes
@@ -26,12 +26,11 @@ These are the version of the package used by the container.
 |  NAME  | Info | 
 |:------:|:-------:|
 |   PWM Version  | pwm-onejar-2.0.0-SNAPSHOT.jar |
-|   RELEASE_DATE |  2020-03-19T20_16_30Z | 
+|   RELEASE_DATE |  2020-08-20T23_36_49Z | 
 
 ## References
-
-This project contains part of code taken or similar from [fjudith container Dockerfile](https://hub.docker.com/r/fjudith/pwm/dockerfile).
+This project was based/forked on the work of Lucas Diedrich (http://github.com/lucasdiedrich) which originally contains part of code taken or similar from [fjudith container Dockerfile](https://hub.docker.com/r/fjudith/pwm/dockerfile).
 
 ## License
 
-MIT © [Lucas Diedrich](https://github.com/lucasdiedrich)
+MIT © [Justin Waymire](https://github.com/jdwaymire)
