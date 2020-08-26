@@ -1,10 +1,10 @@
 FROM openjdk:8-jre-alpine
 
-LABEL maintainer="Lucas G. Diedrich <lucas.diedrich@gmail.com>"
+LABEL maintainer="Justin Waymire <justin@waymirenet.com>"
 
 COPY files/ /
 
-ENV RELDATE=2020-03-19T20_16_30Z \
+ENV RELDATE=2020-08-20T23_36_49Z \
     ARCHIVE=pwm-onejar-2.0.0-SNAPSHOT.jar \
     PWM_PATH=/usr/share/pwm/ \
     SUPERVISOR_PATH=/run/supervisord \
