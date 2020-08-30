@@ -6,7 +6,7 @@ Any questions about the PWM Project should be search [here](https://github.com/p
 
 ```bash
 docker run --name pwm \
-           -p 8443:8443 \
+           -p 443:8443 \
            -v /etc/localtime:/etc/localtime \
            -v ./config:/config \
            -d jdwaymire/pwm
