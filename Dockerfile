@@ -24,5 +24,6 @@ RUN apk add --update --no-cache $PACKAGES && \
 WORKDIR /config
 VOLUME [ "/config" ]
 
+EXPOSE 80
 EXPOSE 8443
 CMD ["/usr/bin/supervisord", "--nodaemon", "-c", "/etc/supervisord.conf"]
