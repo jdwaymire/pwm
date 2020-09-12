@@ -16,6 +16,9 @@ RUN apk add --update --no-cache $PACKAGES && \
     cd $PWM_PATH && \
     chmod +x /usr/bin/start-pwm.sh && \
     wget https://www.pwm-project.org/artifacts/pwm/build/${RELDATE}/${ARCHIVE} && \
+    apk add --no-cache nginx && \
+    mkdir /tmp/nginx && \
+    mkdir -p /run/nginx && \
     rm -rf /var/cache/apk/*
 
 WORKDIR /config
